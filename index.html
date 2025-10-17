@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hatim Ennassiri - Full Stack Developer & Creative Designer Portfolio">
+    <meta name="author" content="Hatim Ennassiri">
+    <title>Hatim Ennassiri - Portfolio</title>
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r156/three.min.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preload and Preconnect -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="icon" type="image/jpg" href="image/logo.jpg">
+
+</head>
+<body>
+    <div id="canvas-container" aria-hidden="true"></div>
+    
+    <div class="content">
+<header>
+  <div class="logo" aria-label="Hatim Ennassiri">
+    <img src="image/logo.jpg" alt="Logo Hatim Ennassiri">
+    <span>Hatim Ennassiri</span>
+  </div>
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+        <main>
+            <section class="hero" aria-labelledby="hero-heading">
+                <h1 id="hero-heading">Hi, I'm <span class="gradient-text">Hatim Ennassiri</span></h1>
+                <p class="subtitle">Full Stack Developer & Creative Designer & Student AI</p>
+                <button class="cta-button" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">
+                    View My Work
+                </button>
+            </section>
+
+            <section id="about" aria-labelledby="about-heading">
+                <h2 class="section-title" id="about-heading">About Me</h2>
+                <div class="about-content">
+                    <p>I'm a passionate developer with expertise in creating modern, responsive web applications. 
+                    With a keen eye for design and a love for clean code, I transform ideas into digital experiences 
+                    that users love.</p>
+                    <p>My approach combines technical excellence with creative problem-solving, ensuring every project 
+                    delivers both functionality and aesthetic appeal.</p>
+                </div>
+            </section>
+
+            <section id="skills" aria-labelledby="skills-heading">
+                <h2 class="section-title" id="skills-heading">Skills</h2>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">🎨</div>
+                        <h3>Frontend Development</h3>
+                        <p>HTML5, CSS3, JavaScript ES6+, React, Vue.js, Responsive Design</p>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">⚙️</div>
+                        <h3>Backend Development</h3>
+                        <p>Node.js, Express, Python, Django, RESTful APIs, GraphQL</p>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">🎭</div>
+                        <h3>UI/UX Design</h3>
+                        <p>Figma, Adobe XD, User Research, Prototyping, Design Systems</p>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">🔧</div>
+                        <h3>Tools & Workflow</h3>
+                        <p>Git, GitHub, CI/CD, Webpack, Agile, Testing (Jest, Cypress)</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="projects" aria-labelledby="projects-heading">
+                <h2 class="section-title" id="projects-heading">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop" 
+                                 alt="E-Commerce Platform Interface" 
+                                 class="project-image"
+                                 loading="lazy">
+                            <div class="project-overlay">
+                                <button class="view-project-btn" aria-label="View E-Commerce Platform project">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    <a href="https://github.com/Hatimxx" class="view-project-link">View Project</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p>A modern e-commerce solution with seamless user experience, secure payment integration, 
+                            and real-time inventory management. Built with React and Node.js.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Stripe</span>
+                                <a href="https://github.com/Hatimxx" class="tag">Live Demo</a>
+                                <a href="https://github.com/Hatimxx" class="tag">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" 
+                                 alt="Mobile App Interface" 
+                                 class="project-image"
+                                 loading="lazy">
+                            <div class="project-overlay">
+                                <button class="view-project-btn" aria-label="View Mobile App project">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    <a href="https://github.com/Hatimxx" class="view-project-link">View Project</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">TODO LIST App</h3>
+                            <p>Cross-platform mobile application with real-time data synchronization, 
+                            push notifications, and offline functionality for seamless user experience.</p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Redux</span>
+                                <span class="tag">TypeScript</span>
+                                <a href="https://github.com/Hatimxx" class="tag">Live Demo</a>
+                                <a href="https://github.com/Hatimxx" class="tag">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop" 
+                                 alt="3D Game Screenshot" 
+                                 class="project-image"
+                                 loading="lazy">
+                            <div class="project-overlay">
+                                <button class="view-project-btn" aria-label="View Interactive 3D Game project">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    <a href="https://github.com/Hatimxx" class="view-project-link">View Project</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Space Explorer 3D</h3>
+                            <p>Browser-based 3D game built with Three.js featuring physics simulation, 
+                            particle effects, and engaging gameplay mechanics with multiplayer support.</p>
+                            <div class="project-tags">
+                                <span class="tag">Three.js</span>
+                                <span class="tag">WebGL</span>
+                                <span class="tag">Socket.io</span>
+                                <span class="tag">JavaScript</span>
+                                <a href="https://github.com/Hatimxx" class="tag">Live Demo</a>
+                                <a href="https://github.com/Hatimxx" class="tag">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" aria-labelledby="contact-heading">
+                <h2 class="section-title" id="contact-heading">Get In Touch</h2>
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="sr-only">Your Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Your Name" 
+                            required 
+                            aria-required="true"
+                        >
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Your Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Your Email" 
+                            required 
+                            aria-required="true"
+                        >
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="sr-only">Your Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            placeholder="Your Message" 
+                            required 
+                            aria-required="true"
+                        ></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="cta-button" id="submitButton">
+                        <span class="button-text">Send Message</span>
+                        <div class="button-loader" style="display: none;">
+                            <svg class="spinner" viewBox="0 0 50 50">
+                                <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                            </svg>
+                        </div>
+                    </button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Hatim Ennassiri. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Hatimxx" aria-label="GitHub" title="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hatim-ennassiri-411368329/" aria-label="LinkedIn" title="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
